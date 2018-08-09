@@ -1,3 +1,7 @@
+:root {
+    --borders-color: #f8f8f8;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -12,13 +16,13 @@ body {
 /* OUR-PORTFOLIO */
 
 #our_portfolio {
-    background-color: #f5f5f5;
+    background-color: #e2e2e2;
     display: flex;
     justify-content: center;
 }
 
 #our_portfolio .container {
-    width: 58%;
+    width: 62%;
     text-align: center;
     margin-bottom: 120px;
 }
@@ -37,26 +41,36 @@ body {
 }
 
 #our_portfolio .container .portfolio .project {
-    width: 280px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 260px;
+    margin-left: 16px;
+    margin-right: 16px;
     margin-bottom: 42px;
     display: flex;
     flex-direction: column;
 }
 
 .portfolio .project .image {
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
 }
 
 .portfolio .project .image img {
     width: 100%;
     height: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.portfolio .project .image:hover img {
+    transform: scale(1.1);
 }
 
 .portfolio .project .data {
     background-color: #ffffff;
+    padding: -1px;
+    border-left: 1px solid var(--borders-color);
+    border-right: 1px solid var(--borders-color);
+    border-bottom: 1px solid var(--borders-color);
 }
 
 .portfolio .project .data .name {
@@ -71,6 +85,21 @@ body {
     font-size: 0.8em;
     font-style: italic;
     margin-top: 0;
+}
+
+@media (max-width: 520px) {
+	.portfolio .project .image {
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+    }
+
+    #our_portfolio .container .title {
+        font-size: 30px;
+    }
+
+    #our_portfolio .container .subtitle {
+        font-size: 14px;
+    }
 }
 
 /* OUR-TEAM */
