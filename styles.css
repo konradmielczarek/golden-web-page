@@ -324,3 +324,78 @@ body {
         font-size: 0.8em;
     }
 }
+
+/* CONTACT-US */
+
+#contact_us {
+    background-image: url(images/contact-us-background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#contact_us .container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+#contact_us .container .title {
+    color: #ffffff;
+}
+
+#contact_us .container .fields {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact_us .container .fields .data {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+#contact_us .container .fields .data input {
+    width: 260px;
+    height: 30px;
+    margin-bottom: 22px;
+    padding: 0 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact_us .container .fields .message textarea {
+    width: 260px;
+    height: 124px;
+    padding: 10px;
+    margin-bottom: 22px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+}
+
+#contact_us .container button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #fcd706;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#contact_us .container button:hover {
+    background-color: #ebc605;
+}
+
+@media (max-width: 648px) {
+    #contact_us .container .fields .data{
+        margin-bottom: 20px;
+    }
+}
