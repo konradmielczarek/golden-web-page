@@ -19,6 +19,22 @@ body {
     font-style: italic;
 }
 
+button {
+    width: 200px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    background-color: #fcd706;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #ebc605;
+}
+
 @media (max-width: 400px) {
     .title {
         font-size: 30px;
@@ -27,6 +43,94 @@ body {
     .subtitle {
         font-size: 14px;
     }
+}
+
+/* WELCOME */
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/welcome-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome .container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#welcome .container .navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#welcome .container .navbar .logo {
+    width: 44%;
+    font-size: 34px;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#welcome .container .navbar .logo a {
+    color: #fcd706;
+    text-decoration: none;
+}
+
+#welcome .container .navbar .menu {
+    width: 56%;
+    height: 100%;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#welcome .container .navbar .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#welcome .container .navbar .menu a:hover {
+    color: #d1d1d1;
+}
+
+#welcome .container .introduction {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    margin-top: 46px;
+    margin-bottom: 148px;
+    text-align: center;
+}
+
+#welcome .container .introduction .text1{
+    font-size: 34px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+    margin-top: 120px;
+    margin-bottom: 26px;
+}
+
+#welcome .container .introduction .text2{
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 26px;
 }
 
 /* ABOUT-US */
@@ -374,22 +478,6 @@ body {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
     resize: none;
-}
-
-#contact_us .container button {
-    width: 200px;
-    height: 40px;
-    border: none;
-    cursor: pointer;
-    background-color: #fcd706;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-#contact_us .container button:hover {
-    background-color: #ebc605;
 }
 
 @media (max-width: 648px) {
