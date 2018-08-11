@@ -324,3 +324,135 @@ body {
         font-size: 0.8em;
     }
 }
+
+/* CONTACT-US */
+
+#contact_us {
+    background-image: url(images/contact-us-background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#contact_us .container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+#contact_us .container .title {
+    color: #ffffff;
+}
+
+#contact_us .container .fields {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact_us .container .fields .data {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+#contact_us .container .fields .data input {
+    width: 260px;
+    height: 30px;
+    margin-bottom: 22px;
+    padding: 0 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact_us .container .fields .message textarea {
+    width: 260px;
+    height: 124px;
+    padding: 10px;
+    margin-bottom: 22px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+}
+
+#contact_us .container button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #fcd706;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#contact_us .container button:hover {
+    background-color: #ebc605;
+}
+
+@media (max-width: 648px) {
+    #contact_us .container .fields .data{
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    background-color: #f9f9f9;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .socials .item {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    background-color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+}
+
+footer .socials .item a {
+    text-decoration: none;
+    color: #ffffff;
+    outline: 0;
+}
+
+footer .socials .item:hover {
+    cursor: pointer;
+}
+
+footer .socials .item:hover:nth-of-type(1) {
+    background-color: #1da1f2;
+    border: 2px solid #1da1f2;
+}
+
+footer .socials .item:hover:nth-of-type(2) {
+    background-color: #3B5998;
+    border: 2px solid #3B5998;
+}
+
+footer .socials .item:hover:nth-of-type(3) {
+    background-color: #C92228;
+    border: 2px solid #C92228;
+}
+
+footer .socials .item:hover:nth-of-type(4) {
+    background-color: #d34836;
+    border: 2px solid #d34836;
+}
