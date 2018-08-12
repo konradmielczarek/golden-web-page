@@ -1,5 +1,10 @@
 :root {
     --borders-color: #f8f8f8;
+    --yellow: #fcd706;
+    --twitter: #1da1f2;
+    --facebook: #3B5998;
+    --pinterest: #C92228;
+    --gplus: #d34836;
 }
 
 body {
@@ -24,7 +29,7 @@ button {
     height: 48px;
     border: none;
     cursor: pointer;
-    background-color: #fcd706;
+    background-color: var(--yellow);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -45,6 +50,51 @@ button:hover {
     }
 }
 
+/* RESPONSIVE NAVBAR */ 
+
+#welcome .container .navbar .toggle {
+    width: 100%;
+    padding: 10px 0;
+    text-align: right;
+    box-sizing: border-box;
+    display: none;
+}
+
+#welcome .container .navbar .toggle i {
+    margin: 0 40px 0 0;
+    font-size: 22px;
+    line-height: 20px;
+    color: #ffffff;
+    display: none;
+}
+
+@media (max-width: 916px) {
+    #welcome .container .navbar .logo a {
+        display: none;
+    }
+
+    #welcome .container .navbar .toggle {
+        display: block;
+    }
+
+    #welcome .container .navbar .toggle i {
+        display: block;
+    }
+
+    #welcome .container .navbar .menu {
+        width: 100%;
+    }
+
+    #welcome .container .navbar .menu a {
+        margin: 8px 0;
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
 /* WELCOME */
 
 #welcome {
@@ -59,7 +109,7 @@ button:hover {
 }
 
 #welcome .container {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,10 +120,12 @@ button:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #welcome .container .navbar .logo {
-    width: 44%;
+    width: 340px;
     font-size: 34px;
     font-weight: 700;
     font-family: 'Dancing Script', cursive;
@@ -83,24 +135,24 @@ button:hover {
 }
 
 #welcome .container .navbar .logo a {
-    color: #fcd706;
+    color: var(--yellow);
     text-decoration: none;
 }
 
 #welcome .container .navbar .menu {
-    width: 56%;
+    width: 560px;
     height: 100%;
-    font-size: 0.8em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 #welcome .container .navbar .menu a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
+    margin-left: 38px;
 }
 
 #welcome .container .navbar .menu a:hover {
@@ -108,9 +160,6 @@ button:hover {
 }
 
 #welcome .container .introduction {
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
     margin-top: 46px;
     margin-bottom: 148px;
     text-align: center;
@@ -172,7 +221,7 @@ button:hover {
     width: 30px;
     height: 30px;
     margin: 0 8px;
-    border: 2px solid #fcd706;
+    border: 2px solid var(--yellow);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -180,7 +229,7 @@ button:hover {
 }
 
 #about_us .container .services .item .icon .border i {
-    color: #fcd706;
+    color: var(--yellow);
 }
 
 #about_us .container .services .item .name {
@@ -206,15 +255,18 @@ button:hover {
 }
 
 #our_portfolio .container {
-    width: 60%;
+    width: 100%;
     text-align: center;
     margin-bottom: 120px;
 }
 
 #our_portfolio .container .portfolio {
     margin-top: 100px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -265,13 +317,6 @@ button:hover {
     margin-top: 0;
 }
 
-@media (max-width: 520px) {
-	.portfolio .project .image {
-        width: calc(100% - 2px);
-        height: calc(100% - 2px);
-    }
-}
-
 /* OUR-TEAM */
 
 #our_team {
@@ -287,7 +332,6 @@ button:hover {
 }
 
 .team {
-    /* width: 100%; */
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -295,11 +339,6 @@ button:hover {
 }
 
 .team .member {
-    /* width: calc(33.33% - 16px);
-    display: flex;
-    flex-direction: column;
-    margin-left: 8px;
-    margin-right: 8px; */
     width: 260px;
     margin-left: 16px;
     margin-right: 16px;
@@ -366,23 +405,23 @@ button:hover {
 }
 
 .team .member .social-links .item:hover:nth-of-type(1) {
-    background-color: #1da1f2;
-    border: 2px solid #1da1f2;
+    background-color: var(--twitter);
+    border: 2px solid var(--twitter);
 }
 
 .team .member .social-links .item:hover:nth-of-type(2) {
-    background-color: #3B5998;
-    border: 2px solid #3B5998;
+    background-color: var(--facebook);
+    border: 2px solid var(--facebook);
 }
 
 .team .member .social-links .item:hover:nth-of-type(3) {
-    background-color: #C92228;
-    border: 2px solid #C92228;
+    background-color: var(--pinterest);
+    border: 2px solid var(--pinterest)8;
 }
 
 .team .member .social-links .item:hover:nth-of-type(4) {
-    background-color: #d34836;
-    border: 2px solid #d34836;
+    background-color: var(--gplus);
+    border: 2px solid var(--gplus);
 }
 
 
@@ -456,11 +495,11 @@ button:hover {
 #contact_us .container .fields .data {
     display: flex;
     flex-direction: column;
-    margin: 0 30px;
+    margin: 0 14px;
 }
 
 #contact_us .container .fields .data input {
-    width: 260px;
+    width: 272px;
     height: 30px;
     margin-bottom: 22px;
     padding: 0 10px;
@@ -469,8 +508,12 @@ button:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
+#contact_us .container .fields .message {
+    margin: 0 14px;
+}
+
 #contact_us .container .fields .message textarea {
-    width: 260px;
+    width: 272px;
     height: 124px;
     padding: 10px;
     margin-bottom: 22px;
@@ -526,21 +569,21 @@ footer .socials .item:hover {
 }
 
 footer .socials .item:hover:nth-of-type(1) {
-    background-color: #1da1f2;
-    border: 2px solid #1da1f2;
+    background-color: var(--twitter);
+    border: 2px solid var(--twitter);
 }
 
 footer .socials .item:hover:nth-of-type(2) {
-    background-color: #3B5998;
-    border: 2px solid #3B5998;
+    background-color: var(--facebook);
+    border: 2px solid var(--facebook);
 }
 
 footer .socials .item:hover:nth-of-type(3) {
-    background-color: #C92228;
-    border: 2px solid #C92228;
+    background-color: var(--pinterest);
+    border: 2px solid var(--pinterest);
 }
 
 footer .socials .item:hover:nth-of-type(4) {
-    background-color: #d34836;
-    border: 2px solid #d34836;
+    background-color: var(--gplus);
+    border: 2px solid var(--gplus);
 }
