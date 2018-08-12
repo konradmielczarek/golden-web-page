@@ -11,6 +11,9 @@
 <section id="welcome">
     <div class="container">
         <div class="navbar">
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
             <div class="logo">
                 <a href="#">Golden</a>
             </div>
@@ -25,7 +28,7 @@
         <div class="introduction">
             <p class="text1">Welcome To Our Studio!</p>
             <p class="text2">IT'S NICE TO MEET YOU</p>
-            <button>TELL ME MORE</button>
+            <button onclick="window.location.href='#about_us'">TELL ME MORE</button>
         </div>
     </div>
 </section>
@@ -237,5 +240,13 @@
         </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#welcome .container .navbar .toggle i').click(function(){
+            $('#welcome .container .navbar .menu a').toggleClass('active');
+        })
+    })
+</script>
 </body>
 </html>

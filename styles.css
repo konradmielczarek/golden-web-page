@@ -50,6 +50,51 @@ button:hover {
     }
 }
 
+/* RESPONSIVE NAVBAR */ 
+
+#welcome .container .navbar .toggle {
+    width: 100%;
+    padding: 10px 0;
+    text-align: right;
+    box-sizing: border-box;
+    display: none;
+}
+
+#welcome .container .navbar .toggle i {
+    margin: 0 40px 0 0;
+    font-size: 22px;
+    line-height: 20px;
+    color: #ffffff;
+    display: none;
+}
+
+@media (max-width: 916px) {
+    #welcome .container .navbar .logo a {
+        display: none;
+    }
+
+    #welcome .container .navbar .toggle {
+        display: block;
+    }
+
+    #welcome .container .navbar .toggle i {
+        display: block;
+    }
+
+    #welcome .container .navbar .menu {
+        width: 100%;
+    }
+
+    #welcome .container .navbar .menu a {
+        margin: 8px 0;
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
 /* WELCOME */
 
 #welcome {
@@ -64,7 +109,7 @@ button:hover {
 }
 
 #welcome .container {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,10 +120,12 @@ button:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #welcome .container .navbar .logo {
-    width: 44%;
+    width: 340px;
     font-size: 34px;
     font-weight: 700;
     font-family: 'Dancing Script', cursive;
@@ -93,19 +140,19 @@ button:hover {
 }
 
 #welcome .container .navbar .menu {
-    width: 56%;
+    width: 560px;
     height: 100%;
-    font-size: 0.8em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 #welcome .container .navbar .menu a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
+    margin-left: 38px;
 }
 
 #welcome .container .navbar .menu a:hover {
