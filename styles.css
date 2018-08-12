@@ -416,7 +416,7 @@ button:hover {
 
 .team .member .social-links .item:hover:nth-of-type(3) {
     background-color: var(--pinterest);
-    border: 2px solid var(--pinterest)8;
+    border: 2px solid var(--pinterest);
 }
 
 .team .member .social-links .item:hover:nth-of-type(4) {
