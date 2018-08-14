@@ -61,10 +61,11 @@ button:hover {
 }
 
 #welcome .container .navbar .toggle i {
-    margin: 0 40px 0 0;
+    margin: 20px 40px 0 0;
     font-size: 22px;
     line-height: 20px;
     color: #ffffff;
+    cursor: pointer;
     display: none;
 }
 
@@ -83,11 +84,13 @@ button:hover {
 
     #welcome .container .navbar .menu {
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     #welcome .container .navbar .menu a {
         margin: 8px 0;
-        display: none;
+        
     }
 
     .active {
@@ -144,7 +147,7 @@ button:hover {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 #welcome .container .navbar .menu a {
@@ -152,7 +155,6 @@ button:hover {
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
-    margin-left: 38px;
 }
 
 #welcome .container .navbar .menu a:hover {
